@@ -1,0 +1,35 @@
+.navbarButton  {
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    padding: 2px 4px;
+    background: #fff;
+    color: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    background-clip: padding-box;
+}
+
+.navbarButton::after {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    bottom: -3px;
+    right: -3px;
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    border-radius: 16px;
+    content: '';
+    z-index: -1;
+}
+
+.navbarButton:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.navbarButtonText {
+    background: linear-gradient(104.61deg, #FF00B8 2.65%, #FF655B 51.83%, #FFC700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: "#fff"
+}
